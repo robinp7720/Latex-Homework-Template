@@ -1,0 +1,75 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Layout
+\usepackage[a4paper, left=3cm, right=3cm, top=2cm, bottom=3cm]{geometry} % kleinere Ränder
+\usepackage{parskip}
+
+\usepackage{subfiles}
+
+% Umlaute in der Datei erlauben, auf Deutsch umstellen
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[english, ngerman]{babel} % Abgaben auf DEUTSCH
+%\usepackage[english]{babel} % for submissions in ENGLISH
+
+% Mathesymbole und Ähnliches
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{stmaryrd}
+
+% Grafiken und PDFs einfügen
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+% Abbildungen
+\usepackage{tikz}
+\usetikzlibrary{arrows, calc}
+
+% Reelle, Natürliche, Ganze, Rationale Zahlen
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+
+% Fraktur für Strukturen
+\newcommand{\A}{\ensuremath{\mathfrak A}}
+\newcommand{\B}{\ensuremath{\mathfrak B}}
+\newcommand{\I}{\ensuremath{\mathfrak I}}
+
+% Makros für logische Operatoren
+\newcommand{\xor}{\ensuremath{\oplus}} % exklusives oder
+\newcommand{\impl}{\ensuremath{\rightarrow}} % logische Implikation
+
+% Meistens ist \varphi schöner als \phi, genauso bei \theta
+\renewcommand{\phi}{\varphi}
+\renewcommand{\theta}{\vartheta}
+
+% Aufzählungen anpassen (alternativ: \arabic, \alph)
+\renewcommand{\labelenumi}{(\roman{enumi})}
+
+\begin{document}
+
+% OPTIONAL: Kopfzeile / header
+Subject~SoSe~2022
+\hfill
+{\Large
+    Übungsblatt 0 % <--- Blattnummer / sheet number
+}
+\hfill
+\today
+
+% Bitte prüfen Sie Ihre MOODLE-ABGABEGRUPPE, damit die Abgabe Ihnen richtig zugeordnet wird.
+% Sie KÖNNEN hier Ihre Namen und Matrikelnummern für sich angeben, aber die Angaben werden IGNORIERT.
+
+% Please check your MOODLE SUBMISSION GROUP in order to ensure that your submission is attributed to you.
+% You MAY provide your names and matriculation numbers here for your own use, but they will be IGNORED.
+
+\hrule
+
+\section*{Aufgabe 1}
+\subfile{Aufgaben/robin_aufgabe1.tex}
+
+\end{document}
